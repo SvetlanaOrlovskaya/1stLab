@@ -34,7 +34,7 @@ public class AddTwoValuesTests {
     }
     @Test
     public void testDivisionTwoPositiveValues() throws Exception {
-        assertEquals ("10 / 2 must be 5",  5.0, calc.division( 10.0,  2.0));
+        assertEquals ("10 / 2 must be 5",  5.0, calc.division( 10.0,  5.0));
     }
     @Test
     public void testDivisionTwoNegativeValues () throws Exception {
