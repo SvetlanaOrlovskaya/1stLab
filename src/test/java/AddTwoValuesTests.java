@@ -34,7 +34,7 @@ public class AddTwoValuesTests {
     }
     @Test
     public void testDivisionTwoPositiveValues() throws Exception {
-        assertEquals ("10 / 2 must be 5",  5.0, calc.division( 10.0,  2.0));
+        assertEquals ("10 / 2 must be 5",  5, calc.division( 10,  2));
         //
     }
     @Test
@@ -57,7 +57,7 @@ public class AddTwoValuesTests {
 
     @Test
     public void testPower (){
-        assertEquals("5.0 pow to 2.0 should be 25.0", 25.0, calc.power(9.0, 2.0));
+        assertEquals("5.0 pow to 2.0 should be 25.0", 25.0, calc.power(5.0, 2.0));
     }
     //TODO
 

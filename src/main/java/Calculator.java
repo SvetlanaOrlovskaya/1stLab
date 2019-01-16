@@ -16,7 +16,7 @@ public class Calculator {
 
         return a * b;
     }
-    public  double division (double a, double b) throws  Exception{
+    public  double division (int a, int b) throws  Exception{
 
         return a / b;
     }
