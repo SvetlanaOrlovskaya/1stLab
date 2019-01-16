@@ -41,10 +41,11 @@ public class AddTwoValuesTests {
         assertEquals ("-10 / -2 must be 5.0", 5.0, calc.division(-10, -2));
     }
     @Test
-    public void testDivisionByZero(){
+    /*public void testDivisionByZero(){
         assertEquals("10/0 must be ");
 
     }
+    */
     //TODO
     //add tests for new methods
 
