@@ -33,21 +33,25 @@ public class AddTwoValuesTests {
         assertEquals("5 * 5 must be 25", 25, calc.multiply(5, 5));
     }
     @Test
-    public void testDivisionTwoPositiveValues(){
+    public void testDivisionTwoPositiveValues() throws Exception {
         assertEquals ("10 / 2 must be 5",  5.0, calc.division( 10.0,  2.0));
     }
     @Test
-    public void testDivisionTwoNegativeValues () {
+    public void testDivisionTwoNegativeValues () throws Exception {
         assertEquals ("-10 / -2 must be 5.0", 5.0, calc.division(-10, -2));
     }
     @Test
-    /*public void testDivisionByZero(){
-        assertEquals("10/0 must be ");
-
+    public void testDivideZero() {
+        try{
+            calc.division(20,0);
+            assertEquals("Somthing Wrong",true,false);
+        }catch(Exception ae){
+            assertEquals("You shouldnt do it","/ by zero", ae.getMessage());
+        }
     }
-    */
     //TODO
     //add tests for new methods
+    //Sqrt and Power tests
 
     @After
     public void consolePrintAfter() {
