@@ -25,7 +25,7 @@ public class Calculator {
 
         return a - b;
     }
-    public double square_root (double a){
+    public double square (double a){
 
               return Math.sqrt(a);
     }

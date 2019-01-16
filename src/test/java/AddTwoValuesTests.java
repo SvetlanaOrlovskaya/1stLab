@@ -49,9 +49,17 @@ public class AddTwoValuesTests {
             assertEquals("You shouldnt do it","/ by zero", ae.getMessage());
         }
     }
+    @Test
+    public void testSquare (){
+        assertEquals("sqrt from 25.0 should be 5.0", 5.0, calc.square(25));
+    }
+
+    @Test
+    public void testPower (){
+        assertEquals("5.0 pow to 2.0 should be 25.0", 25.0, calc.power(5.0, 2.0));
+    }
     //TODO
-    //add tests for new methods
-    //Sqrt and Power tests
+
 
     @After
     public void consolePrintAfter() {
